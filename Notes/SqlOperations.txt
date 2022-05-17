@@ -1,0 +1,23 @@
+﻿-----------------------Creating database------------------------------
+CREAT DATATBASE UzDotnet
+
+-----------------------Creatting table--------------------------------
+CREATE TABLE Users(
+	Id int not null,
+	Name varchar(50),
+	Age int,
+	PRIMARY KEY(Id)
+)
+
+---------------------View connection string---------------------------
+Data Source=(localdb)\Ruzimurod;Initial Catalog=UzDotnet;
+Integrated Security=True;Connect Timeout=30;Encrypt=False;
+TrustServerCertificate=False;ApplicationIntent=ReadWrite;
+MultiSubnetFailover=False;Initial Catalog=UzDotnet;
+
+-------------------Create default users------------------------------
+INSERT INTO [dbo].[Users] ([Id], [Name], [Age]) VALUES ( N'Ruzimurod', 19)
+INSERT INTO [dbo].[Users] ([Id], [Name], [Age]) VALUES ( N'Mark', 24)
+INSERT INTO [dbo].[Users] ([Id], [Name], [Age]) VALUES (N'Vladimir', 39)
+INSERT INTO [dbo].[Users] ([Id], [Name], [Age]) VALUES ( N'Natalya', 18)
+
